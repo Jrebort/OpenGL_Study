@@ -20,11 +20,20 @@ int main(void)
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
 
+    //GLenum err = glewInit();
+
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
+
+        glBegin(GL_TRIANGLES);
+        glVertex2f(-0.5f, -0.5f);
+        glVertex2f(0.5f, -0.5f);
+        glVertex2f(0.0f, 0.5f);
+        glEnd();
+
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
