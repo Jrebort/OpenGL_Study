@@ -9,6 +9,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "vendor/glfw/include"
+IncludeDir["GLEW"] = "vendor/glew/include"
 
 include "vendor/glfw"
 
@@ -23,12 +24,14 @@ project "Learning"
     }
 
    includedirs {
-       "%{IncludeDir.GLFW}"
+       "%{IncludeDir.GLFW}",
+       "%{IncludeDir.GLEW}"
    }
 
    links {
        "GLFW",
-       "opengl32.lib"
+       "opengl32.lib",
+       "vendor/glew/lib/Release/x64/glew32s.lib"
    }
 
    filter "configurations:Debug"
