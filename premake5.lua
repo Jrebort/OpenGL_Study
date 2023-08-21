@@ -18,10 +18,12 @@ project "Learning"
    language "C++"
    targetdir "bin/%{cfg.buildcfg}"
 
+
    files { 
         "src/**.cpp",
         "src/**.h",
     }
+
 
    includedirs {
        "%{IncludeDir.GLFW}",
@@ -31,13 +33,14 @@ project "Learning"
    links {
        "GLFW",
        "opengl32.lib",
-       "vendor/glew/lib/Release/x64/glew32s.lib"
+       "vendor/glew/lib/Release/x64/glew32s.lib",
+       "vendor/glew/lib/Release/x64/glew32.lib"
    }
 
    filter "configurations:Debug"
-      defines { "DEBUG" }
-      symbols "On"
+      defines {"GLEW_STATIC"}
+      --symbols "On"
 
    filter "configurations:Release"
-      defines { "NDEBUG" }
+      defines {"GLEW_STATIC" }
       optimize "On"
