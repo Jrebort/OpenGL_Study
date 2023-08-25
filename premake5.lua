@@ -26,21 +26,22 @@ project "Learning"
 
 
    includedirs {
-       "%{IncludeDir.GLFW}",
-       "%{IncludeDir.GLEW}"
+        "src",
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.GLEW}"
    }
 
    links {
-       "GLFW",
-       "opengl32.lib",
-       "vendor/glew/lib/Release/x64/glew32s.lib",
-       "vendor/glew/lib/Release/x64/glew32.lib"
+        "GLFW",
+        "opengl32.lib",
+        "vendor/glew/lib/Release/x64/glew32s.lib",
+        "vendor/glew/lib/Release/x64/glew32.lib"
    }
 
    filter "configurations:Debug"
-      defines {"GLEW_STATIC"}
-      --symbols "On"
+        defines {"GLEW_STATIC"}
+        --symbols "On"
 
    filter "configurations:Release"
-      defines {"GLEW_STATIC" }
-      optimize "On"
+        defines {"GLEW_STATIC" }
+        optimize "On"
