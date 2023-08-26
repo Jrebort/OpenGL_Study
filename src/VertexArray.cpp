@@ -1,4 +1,5 @@
 #include "VertexArray.h"
+#include "VertexBufferLayout.h"
 #include "Renderer.h"
 
 VertexArray::VertexArray()
@@ -19,7 +20,7 @@ void VertexArray::AddBufffer(const VertexBuffer& vb, const VertexBufferLayout& l
 	vb.Bind();
 	const auto& elements = layout.GetElements();
 	unsigned int offset = 0;
-	for (unsigned int i = 0; i < elements.size();)
+	for (unsigned int i = 0; i < elements.size(); i++)
 	{
 		const auto& element = elements[i];
 		GLCall(glEnableVertexAttribArray(i));

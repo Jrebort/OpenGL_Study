@@ -41,5 +41,6 @@
     <ClInclude Include="src\VertexBuffer.h" />
     <ClInclude Include="src\IndexBuffer.h" />
     <ClInclude Include="src\VertexBufferLayout.h" />
+    <ClInclude Include="src\VertexArray.h" />
   </ItemGroup>
 </Project>
