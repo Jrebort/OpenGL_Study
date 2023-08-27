@@ -35,6 +35,7 @@
     <ClCompile Include="src\VertexBuffer.cpp" />
     <ClCompile Include="src\IndexBuffer.cpp" />
     <ClCompile Include="src\VertexArray.cpp" />
+    <ClCompile Include="src\Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Renderer.h" />
@@ -42,5 +43,6 @@
     <ClInclude Include="src\IndexBuffer.h" />
     <ClInclude Include="src\VertexBufferLayout.h" />
     <ClInclude Include="src\VertexArray.h" />
+    <ClInclude Include="src\Shader.h" />
   </ItemGroup>
 </Project>
