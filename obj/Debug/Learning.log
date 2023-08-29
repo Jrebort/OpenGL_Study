@@ -1,4 +1,15 @@
-﻿  Application.cpp
-  Shader.cpp
+﻿  Shader.cpp
+E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
+  Application.cpp
+E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
+  IndexBuffer.cpp
+E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
+  Renderer.cpp
+E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
+  VertexArray.cpp
+E:\dev\OpenGL_Study\src\Renderer.h(22,32): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\dev\OpenGL_Study\src\Renderer.h(22,32): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+E:\dev\OpenGL_Study\src\VertexArray.cpp(27,3): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const void *”
+  VertexBuffer.cpp
+E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
   正在生成代码...
-  Learning.vcxproj -> E:\dev\OpenGL_Study\bin\Debug\Learning.exe
