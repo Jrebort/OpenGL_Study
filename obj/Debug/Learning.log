@@ -1,10 +1,12 @@
-﻿  Shader.cpp
-E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
-  Application.cpp
+﻿  Application.cpp
 E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
   IndexBuffer.cpp
 E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
   Renderer.cpp
+E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
+  Shader.cpp
+E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
+  Texture.cpp
 E:\dev\OpenGL_Study\src\VertexBufferLayout.h(19,3): error C3861: “ASSERT”: 找不到标识符
   VertexArray.cpp
 E:\dev\OpenGL_Study\src\Renderer.h(22,32): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
